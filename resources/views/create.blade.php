@@ -17,7 +17,7 @@
                             required>
                     </div>
                     <div class="mb-4">
-                        <label for="content" class="block text-gray-700 font-bold mb-2">Content</label>
+                        <label for="content" class="block text-gray-700 font-bold mb-2">Content (Markdown Supported)</label>
                         <textarea name="content" id="content" rows="10" class="w-full px-4 py-2 border border-gray-300 rounded-lg"
                             placeholder="Write your note here..." required></textarea>
                     </div>
