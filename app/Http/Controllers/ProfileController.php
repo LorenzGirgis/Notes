@@ -42,7 +42,7 @@ class ProfileController extends Controller
 
             $user->update($request->only(['password']));
             
-            return redirect()->route('password')->with('status', 'Password updated successfully!');
+            return redirect()->route('password')->with('status', 'Passworxd updated successfully!');
         }
 
         public function updatePhoto(ProfileRequest $request)
