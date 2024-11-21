@@ -26,7 +26,7 @@ class NotesController extends Controller
             'user_id' => auth()->id(),
         ]);
     
-        return redirect()->route('notes')->with('success', 'Note created successfully.');
+        return redirect()->route('notes')->with('status', 'Note created successfully.');
     }
     
     public function edit($id)
@@ -40,7 +40,7 @@ class NotesController extends Controller
         $note = Note::findOrFail($id);
         $note->update($request->validated());
     
-        return redirect()->route('notes')->with('success', 'Note updated successfully.');
+        return redirect()->route('notes')->with('status', 'Note updated successfully.');
     }
     
     public function destroy($id)
@@ -48,6 +48,6 @@ class NotesController extends Controller
         $note = Note::findOrFail($id);
         $note->delete();
     
-        return redirect()->route('notes')->with('success', 'Note deleted successfully.');
+        return redirect()->route('notes')->with('status', 'Note deleted successfully.');
     }
 }    
